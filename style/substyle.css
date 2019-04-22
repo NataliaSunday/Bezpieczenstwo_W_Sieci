@@ -1,0 +1,118 @@
+.sub-page-main-header {
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    background: url("../img/image-from-rawpixel-id-478367-jpeg.jpg") center/cover no-repeat fixed;
+
+}
+
+.sub-page-header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+    text-align: center;
+    color: #3A4559;
+    text-shadow: 3px 3px 30px #3A4559;
+
+
+}
+
+.main-subpage section {
+    padding: 3em 10em;
+}
+
+.grid-4 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1em;
+    text-align: center;
+
+}
+
+.grid-4 h1 {
+    grid-area: 1/1/1/5;
+}
+
+.subList {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-subpage ul li {
+    list-style-type: circle;
+}
+
+.subList ul li {
+    list-style-type: decimal;
+}
+
+.net-law-section {
+    text-align: center;
+}
+
+
+.accordion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion h3:hover {
+    color: #F3F3F4;
+}
+
+.accordion-header {
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+}
+
+@media  (max-width:986px){
+    body{
+        width:100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-page-main-header {
+        width:100vw;
+        height:150vh;
+        position: relative;
+        
+    }
+    .sub-page-header-content{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+ .main-subpage section{
+        padding: 2em;
+        margin: 0;
+    }
+    .grid-3{
+        display: flex;
+        flex-direction: column;
+      
+        width: 100vw;
+        
+    }
+    .grid-3 div{
+        width:100vw;
+        height: auto;
+        padding-right: 6em;
+    }
+  
+    .subList{
+        width: 100vw;
+    }
+}
