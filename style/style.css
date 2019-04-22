@@ -1,718 +1,347 @@
 body {
-
     margin: 0;
-
     padding: 0;
-
     font-family: 'Muli', Arial, Helvetica, sans-serif;
-
     background-color: #D5E7F5;
-
     color: white;
-
     overflow-x: hidden;
-
-
-
 }
-
-
 
 * {
-
     box-sizing: border-box;
-
 }
-
-
 
 .container-main {
-
-
-
     width: 100vw;
-
     height: auto;
-
-
-
     display: flex;
-
     flex-direction: column;
-
 }
-
-
 
 h1,
-
 h2,
-
 h3 {
-
     text-align: center;
-
 }
-
-
 
 h1 {
-
     color: #F3F3F4;
-
 }
-
-
 
 h2 {
-
     color: #CAE9F1;
-
 }
-
-
 
 h3 {
-
     color: #5BB4DB;
-
 }
-
-
 
 a {
-
     text-decoration: none;
-
     color: #7CB6DB;
-
     font-weight: bold;
-
 }
-
-
 
 .btn-get-more {
-
     padding: .3em .6em;
-
     transition: all .5s ease-in-out;
-
 }
-
-
 
 .btn-get-more:hover {
-
-
-
     background-color: #7EB6DB;
-
     color: white;
-
-
-
 }
-
-
 
 /** HEADER /*/
-
 header {
-
     width: 100vw;
-
     height: 90vh;
-
-
-
 }
-
-
 
 nav {
-
     width: 100%;
-
     height: 12vh;
-
     background-color: #F7F7F7;
-
-
-
-
-
 }
-
-
 
 .menu {
-
-
-
     width: 100vw;
-
     height: 100%;
-
     padding: 0;
-
     margin: 0;
-
     display: flex;
-
     justify-content: center;
-
     align-items: stretch;
-
     list-style-type: none;
-
     text-transform: uppercase;
-
 }
-
-
-
-
 
 .menu li {
-
     width: auto;
-
     height: 78%;
-
     padding: 1em 2em;
-
     margin: 1em 1em;
-
     border-top: 3px solid transparent;
-
     transition: border-top .5s ease-in-out;
-
     position: relative;
-
     list-style-type: none;
-
 }
-
-
 
 .menu .active {
-
     border-top: 3px solid #7CB6DB;
-
 }
-
-
 
 .menu li:hover {
-
     border-top: 3px solid #3A4559;
-
 }
-
-
-
 
 .menu .menu-lv2 {
-   
     position: absolute;
-
     top: 100%;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     display: none;
-    
-    
     background-color: #F7F7F7;
-
     margin: 0;
-
     padding: 0;
-
     text-align: center;
-
     z-index: 1;
-
 }
-
-
 
 .main-page-header {
-
     width: 100%;
-
     height: 80vh;
-
     display: flex;
-
     flex-direction: row;
-
     align-items: center;
-
-
-
 }
-
-
 
 .main-page-header-content {
-
     background-color: #D5E7F5;
-
     height: auto;
-
     color: #3A4559;
-
     width: 25%;
-
     font-size: 3em;
-
     z-index: 1;
-
     text-align: center;
-
     margin: 1em 2em;
-
 }
-
-
 
 .main-page-header-photo {
-
     z-index: -4;
-
     width: 70%;
-
     height: 100%;
-
     background: #D5E7F5 url("../img/image-from-rawpixel-id-479614-jpeg.jpg") top/cover no-repeat fixed;
-
     -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
     clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
 }
-
-
-
-
 
 section {
-
-
-
     background-color: #275386;
-
 }
 
-
-
-/*  curiosities //*/
-
+/* curiosities //*/
 .curiosities {
-
     background-color: #275386;
-
     padding: 3em;
-
     z-index: -2;
-
-
-
 }
-
-
 
 .grid-3 {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
-
     grid-template-rows: auto 1fr;
-
     grid-gap: 1em;
-
     text-align: center;
-
 }
-
-
 
 .grid-3 h1 {
-
     grid-area: 1/1/1/4;
-
-
-
 }
-
-
 
 /* siatkana głównej //*/
-
 .grid-to-grid {
-
     width: 100%;
-
     padding: 3em;
-
     display: grid;
-
     grid-template: auto 18vw 18vw / 1fr 1fr 2fr;
-
     grid-gap: 3em 2em;
-
     text-align: center;
-
-
-
 }
-
-
 
 .grid-to-grid h1 {
-
     grid-area: 1/1/1/4;
-
 }
-
-
 
 .grid-to-grid div {
-
     width: 100%;
-
     height: 100%;
-
     position: relative;
-
     display: flex;
-
     flex-direction: column;
-
     background-color: #D5E7F5;
-
     padding: 0 1em;
-
 }
-
-
 
 .grid-to-grid div a,
-
 .grid-to-grid div p {
-
     opacity: 0;
-
     position: absolute;
-
     top: 0;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     transition: all .5s ease-in-out;
-
     background-color: #D5E7F5;
-
     color: #7CB6DB;
-
 }
-
-
 
 .grid-to-grid h3 {
-
     margin: 0;
-
     position: absolute;
-
     top: 50%;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     font-size: 160%;
-
 }
-
-
 
 .grid-to-grid div:hover p {
-
     animation: pAnimation .6s ease-in-out .65s;
-
     animation-fill-mode: both;
-
 }
-
-
 
 .grid-to-grid div:hover h3 {
-
     animation: h3animation .5s ease-in-out;
-
     animation-fill-mode: both;
-
 }
 
-
-
 .grid-to-grid div:hover a {
-
     animation: aAnimation .5s ease-in-out 1s;
-
     animation-fill-mode: both;
-
 }
 
 .quiz-sec {
-
     text-align: center;
-
     padding: 3em;
-
 }
 
 .quiz-sec a {
-
     font-size: 150%;
-
 }
 
 footer {
-
     background-color: #3A4559;
-
     padding: 1em;
-
     text-align: center;
-
 }
-
-
 
 @keyframes h3animation {
-
     0% {
-
         position: absolute;
-
         top: 50%;
-
         left: 50%;
-
         transform: translate(-50%, -50%);
-
         margin: 0;
-
     }
-
-
 
     100% {
-
         position: absolute;
-
         top: 20%;
-
     }
-
 }
-
-
 
 @keyframes pAnimation {
-
     0% {
-
         position: relative;
-
         top: 0;
-
         opacity: 0;
-
     }
-
-
 
     100% {
-
         position: relative;
-
         top: 25%;
-
         transform: translateX(-50%);
-
         opacity: 1;
-
-
-
     }
-
 }
 
-
-
 @keyframes aAnimation {
-
     0% {
-
         position: absolute;
-
         top: 0;
-
         opacity: 0;
-
     }
-
-
 
     100% {
-
         position: absolute;
-
         top: 90%;
-
         opacity: 1;
-
     }
-
 }
 
 @media (max-width:986px) {
-
-
-
     body {
-
         width: 100vw;
-
         height: auto;
-
         display: flex;
-
         flex-direction: column;
-
     }
 
     .menu {
-
         display: flex;
-
         flex-direction: column;
-
         width: 100vw;
-
         text-align: center;
-
     }
-    .menu ul{
+
+    .menu ul {
         width: 100vw;
     }
-
 
     .menu ul li li {
         display: none;
-
         flex-direction: column;
-
         width: 100vw;
     }
 
     .menu ul li .active {
-        
         display: flex;
         flex-direction: column;
-       
-
     }
-    
-    
 
     header,
     nav {
-
         height: auto;
-
     }
 
     .main-page-header {
-
         position: relative;
-
     }
 
     .main-page-header-content {
-
         position: absolute;
-
         top: 50%;
-
         left: 50%;
-
         transform: translate(-50%, -50%);
-
         background-color: transparent;
-
         width: auto;
-
         height: auto;
-
         margin: 0;
-
         color: #275386;
-
         text-shadow: 3px 3px 15px #CAE9F1;
-
-
-
     }
 
     .main-page-header-photo {
-
         width: 100vw;
-
-
-
     }
 
-
-
     .grid-to-grid {
-
-
-
         padding: 0;
-
         display: flex;
-
         flex-direction: column;
-
-
-
     }
 
     .grid-to-grid div {
-
         width: 100vw;
-
         height: 35vh;
-
-
-
-
-
     }
-
-
-
-
-
 }
